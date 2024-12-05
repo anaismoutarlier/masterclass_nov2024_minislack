@@ -17,6 +17,7 @@ export default function Message({ message, isOwnMessage }) {
         src={message?.user.photoURL || randomAvatar}
         alt={message?.user.displayName || ""}
         className={styles.avatar}
+        title={message?.user.displayName || ""}
       />
       <div>
         <h6>{message.content}</h6>
